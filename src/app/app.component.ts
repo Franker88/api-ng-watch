@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'api-watch';
+
+  searchAllInfo(param:any){
+    console.log("I'm the parent");
+    console.log(param);
+  }
 }
