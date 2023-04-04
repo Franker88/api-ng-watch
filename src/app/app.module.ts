@@ -7,6 +7,7 @@ import { FormComponent } from './components/form/form.component';
 import { ApiListComponent } from './components/api-list/api-list.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

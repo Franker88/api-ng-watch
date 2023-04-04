@@ -11,12 +11,6 @@
                       <option *ngFor="let category of categories;let i = index" [value]="category.value">{{category.name}}</option>
                     </select>
                   </div>
-                  <div class="form-group">
-                    <label for="exampleSelect1" class="form-label mt-4">Others</label>
-                    <select class="form-select" name="other" [(ngModel)]="otherSelected">
-                      <option *ngFor="let option of other;let in = index" [value]="option.value">{{option.name}}</option>
-                    </select>
-                  </div>
                   <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">Search</button>
             </form>
         </div>

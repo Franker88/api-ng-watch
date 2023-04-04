@@ -1,5 +1,6 @@
-<app-navbar [title]="'InfoGPI'"></app-navbar>
+<app-navbar [title]="'InfoGPIStore'"></app-navbar>
 <div class="container">
   <app-form (selectedParams)="searchAllInfo($event)"></app-form>
-  <app-api-list></app-api-list>
+  <app-spinner class="d-flex justify-content-center" *ngIf="loading==true"></app-spinner>
+  <app-api-list [productList]="productsList"></app-api-list>
 </div>
